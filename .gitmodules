@@ -1,0 +1,6 @@
+[submodule "whiteboard-react"]
+	path = whiteboard-react
+	url = https://github.com/DarCkDev/whiteboard-react.git
+[submodule "whiteboard-srv"]
+	path = whiteboard-srv
+	url = https://github.com/DarCkDev/whiteboard-srv.git

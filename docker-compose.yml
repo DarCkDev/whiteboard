@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  client:
+    container_name: container_client
+    build: ./whiteboard-react
+    ports:
+      - 3000:3000
+    links:
+      - server
+    depends_on:
+      - server
+  server:
+    container_name: container_server
+    build: ./whiteboard-srv
+    image: node
+    ports:
+      - 3003:3003
+    links:
+      - mongodb
+    depends_on:
+      - mongodb
+  mongodb:
+    container_name: container_db
+    image: mongo
+    ports:
+      - 27017:27017
