@@ -1,5 +1,30 @@
 # **Pizarra (React JS, NodeJS, MongoDB & Docker)**
 
+## **INSTALACIÓN**
+Desde la terminal
+1. Clonar el repositorio con el siguiente comando:
+    ```git clone --recurse-submodules https://github.com/DarCkDev/whiteboard.git```
+2. Ingresar a la carpeta **whiteboard** con el comando:
+    ```cd whiteboard```
+3. Ingresar a la carpeta **whiteboard-react** con el comando:
+    ```cd whiteboard-react```
+4. Instalar las dependencias con el comando:
+    ```npm install```
+5. Retornar a la carpeta **whiteboard** con el comando:
+    ```cd ..```
+6. Ingresar a la carpeta **whiteboard-srv** con el comando
+    ```cd whiteboard-srv```
+7. Instalar las dependencias con el comando:
+    ```npm install```
+8. Retornar a la carpeta **whiteboard** con el comando:
+    ```cd ..```
+9. Dentro de la carpeta **whiteboard** ejecutar el comando:
+    ```docker-compose build```
+10. Finalmente, dentro de la carpeta **whiteboard** ejecutar el comando:
+    ```docker-compose up```
+
+Puede iniciar la pizarra con ```localhost:3000?username=NOMBRE&room=SALA```
+
 ## **Funcionalidades**
 
 - Dibujo libre
